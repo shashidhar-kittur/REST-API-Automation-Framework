@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="REST API Automation Test Suite" verbose="1">
+
+    <!-- Listeners: Automatically captures test events and generates HTML reports -->
+    <listeners>
+        <listener class-name="com.api.utils.ExtentReportManager" />
+    </listeners>
+
+    <test name="API CRUD and Negative Scenarios">
+        <classes>
+            <class name="com.api.tests.UserCrudTests" />
+            <class name="com.api.tests.NegativeTests" />
+        </classes>
+    </test>
+
+</suite>
